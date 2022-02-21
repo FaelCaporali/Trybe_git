@@ -1,0 +1,9 @@
+objetivo:
+reponder no slack “Que soft skill terá mais relevância na minha trajetória profissional?"
+resposta:
+Comunicação e liderança
+motivo:
+1. comunicação:
+Em toda empresa existem falhas de comunicação ou pontos a serem melhorados. Eliminar subjetividade e ser assertivo é algo que demanda treinamento e reeducação.
+2. liderança:
+A capacidade de ser liderado é uma capacidade pouco desenvolvida em mim e que já me causou demissões
