@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
+        body {
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+        }
         h1 {
             font-size:65px;
+            font-family: sans-serif;
             color:orange;
+            font-style: oblique;
+
         }
         ul {
             background-color: rgb(233, 27, 27);
@@ -14,8 +23,30 @@
         .classe1 {
             background-color: blue;
         }
-<! - O objetivo do exercício é conflitar mesmo? ->        
+        p {
+            font-weight: 600;
+            font-size: 3em;
+            font-style: italic;
+            text-decoration:overline underline;
+        }
+        li {
+            line-height: 50px;
+            text-align: center;
+            text-decoration:dotted;
+        }
+        #am {
+            background-color: yellow;
+        }
+        #ver {
+            background-color: red;
+        }
+        #ma {
+            background-color: brown;
+        }
+       
     </style>
+
+<! - O objetivo do ultimo exercício na primeira parte é conflitar mesmo? -> 
   
 
 
@@ -27,9 +58,9 @@
     <h1>Exercícios 3.2</h1>
     <p class="classe1" >Qual é a sua cor favorita?</p>
     <ul class="classe1">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="am">Amarelo</li>
+      <li id="ver">Vermelho</li>
+      <li id="ma">Marrom</li>
     </ul>
   </body>
 </html>
