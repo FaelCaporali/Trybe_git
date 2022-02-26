@@ -1,0 +1,30 @@
+div:hover {
+    border: solid black;
+}
+div:nth-of-type(1) h3{
+    background-color: blue;
+    font-size: 35px;
+}
+
+div:nth-of-type(2) {
+    background-color: orange;
+    color:white;
+}
+div:nth-of-type(3) {
+    background-color: blueviolet;
+    font-weight: 100;
+    color: greenyellow;
+    height: 250px;
+}
+div:nth-of-type(4) {
+    background-color: gray;
+    font-family: shizuru;
+}
+div:nth-of-type(5) {
+    background-color: aqua;
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+div:nth-of-type(2n+1) h3 {
+    font-style:italic;
+    text-decoration: underline;
+}
