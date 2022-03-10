@@ -1,0 +1,5 @@
+f1- 1 ponto
+f3 - 1 ponto
+f4 - menos 1 ponto
+1
+pontuação final 2 pntos

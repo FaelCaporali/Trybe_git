@@ -1,0 +1,57 @@
+/* 1 - Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. 
+Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, 
+utilize a propriedade text-transform para deixar o texto maiúsculo. 
+(Dica: combinar classes pode ser útil aqui). */
+
+
+ol li {
+    background-color: yellow;
+}
+/* numeração ímpar (2n +1) ou (odd) */ 
+ol li:nth-of-type(odd) {
+    text-transform: uppercase;
+}
+/* numeração par (2n) ou (even)*/
+ol li:nth-of-type(even) {
+    color: green;
+}
+/* títulos em fonte vermelha*/
+h1 h2 h3 {
+    color: red;
+}
+/* títulos em itálico com tamanho de fonte e borda alteradas */
+h1 em, h2 em, h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+/* listas com fontes maiores e itálico fica tb em negrito */
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+#ling li:nth-of-type(-n+3) {
+    color: blue;
+}
+#ling .jtst {
+    background-color: pink;
+}
+.ref li:hover {
+    font-weight: bold;
+}
+.ref li a[href*="stackoverflow"]:hover {
+    color: orange;
+  }
+.ref li a[href*="w3"]:hover {
+      color: green;
+  }
+.ref li a[href*="developer"]:hover {
+    color: black;
+}
+.ref li a[href*="devdocs"]:hover {
+    color: yellow;
+}
+.ref li a[href*="trybe"]:hover {
+    color: green;
+}

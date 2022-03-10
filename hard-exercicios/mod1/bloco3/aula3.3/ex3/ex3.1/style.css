@@ -1,0 +1,13 @@
+h1, p {
+    text-align: center;
+}
+ol:hover, ul:hover{
+    background-color: green;    
+}
+li:active {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+li, ul, ol {
+    list-style: none;
+}

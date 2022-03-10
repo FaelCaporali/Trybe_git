@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(253, 251, 251);
+    font-family: "Bodoni Moda", serif;
+}
+header {
+    background-color: #2fc18c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+header h1 {
+    margin-left: 2vw;
+}
+nav ul {
+    position: fixed;
+    background-color: #2fc18c;
+    top:inherit;
+    text-align: center;
+    width:max-content;
+}
+nav li {
+    background-color: rgb(253, 251, 251);
+    margin: 1vw;
+    list-style: inside none;
+}
+nav a {
+    color: black;
+}
+img {
+    width: 12vw;
+    border-radius: 50%;
+    margin-top: 14vh;
+    margin-left: -14vw;
+    float:inline-start;
+}
+table {
+    display: block;
+    margin-left: 5vw;
+}
+caption {
+    font-size: xx-large;
+}
+table, th, td {
+    text-align: center;
+    border: solid #2fc18c 2px;
+    width: 90vw;
+}
+tr {
+    font-weight: 600;
+}
+#meuap {
+    display: block;
+    width: 80vw;
+    text-align: center;
+    margin-left: 3vw;
+}
+.lado-esquerdo {
+    width: 35vw;
+    display: inline-block;
+    text-align: justify;
+    margin-bottom: 5vh;
+}
+.lado-direito {
+    width: 20vw;
+    display: inline-block;
+    text-align: justify;
+    margin-left: 3vw;
+    margin-right: 0;
+}
+#meuap h2 {
+    text-align: center;}
