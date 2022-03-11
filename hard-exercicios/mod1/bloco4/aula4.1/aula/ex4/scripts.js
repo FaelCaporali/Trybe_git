@@ -19,6 +19,3 @@ else {
     message = "Tô dormindo";
 }
 console.log(message);
-
-//parte 2//
-
