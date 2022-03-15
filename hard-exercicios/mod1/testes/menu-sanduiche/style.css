@@ -1,0 +1,16 @@
+img {
+    position: fixed;
+    height: 8vh;
+    border-radius: 50%;
+    top: 2vh;
+    right: 2vh;
+}
+main {
+    height: 200vh;;
+}
+ul {
+    top: 2vh;
+    right: 2vh;
+    position: fixed;
+    visibility: hidden;
+}
