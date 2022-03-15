@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="teste" id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="teste" id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      // //1
+      // document.getElementById("page-title").innerText = "Isso é um teste";
+      // 2
+      // document.getElementById("second-paragraph").innerText = "Como colocar um butãozin?";
+      // 3
+      // document.getElementById("subtitle").innerText = "<strong>FOI BUGADO</strong>";
+      // 4
+      // let lst = document.getElementsByClassName("teste");
+      // lst[0].style.border = 'solid red 1px'
+      // lst[0].style.backgroundColor = 'yellow';
+      // lst[1].style.backgroundColor = 'green';
+      // lst[1].style.color = 'white';
+      // lst[1].style.border = 'yellow 1px solid'
+      // for (el in lst) {
+      //   lst[el].style.fontSize = '35px';
+      // }
+      // 5 ..
+      // substituir elementById e ByClassName por querySelector(All)
+      //5.1
+      let lstTwo = document.querySelector('h2');
+      lstTwo.innerText = 'Somente um teste, isso não é mais. Jovem Padawan.';
+      //5.2
+      document.querySelector('#second-paragraph').innerHTML = "<a href= 'https://www.google.com'>GOOGLE LINK</a>";
+      //5.3
+      document.querySelector('h4').innerHTML = '<strong>Desbugou a cachola?</strong>';
+      //5.4 
+      let lst = document.querySelectorAll('.teste');
+      
+      function changeStyle() {
+        for (let i =0; i< lst.length; i+=1) {
+          lst[i].style.color = 'green';
+          lst[i].style.backgroundColor = 'yellow';
+          lst[i].style.border = 'solid red 3px';
+        };
+      }
+      changeStyle();
+      
+      document.querySelector('h4').style.backgroundColor = 'pink';
+    </script>
+  </body>
+</html>
