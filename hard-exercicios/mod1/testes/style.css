@@ -1,0 +1,13 @@
+input {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 35vh;
+    left:45vw;
+}
+main {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
