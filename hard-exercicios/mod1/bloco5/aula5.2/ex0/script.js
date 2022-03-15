@@ -30,7 +30,14 @@ povoa('#elementoOndeVoceEsta');
 povoa('#primeiroFilhoDoFilho');
 //12
 document.querySelector('#primeiroFilhoDoFilho section').parentElement.parentElement.parentElement.children[2];
-
-
-
-
+//13
+//Remova todos os elementos filhos de paiDoPai
+// exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+document.querySelector('#primeiroFilho').remove();
+document.querySelector('#primeiroFilhoDoFilho').removeChild(document.querySelector('#primeiroFilhoDoFilho').children[0]);
+onde.removeChild(onde.children[1]);
+onde.removeChild(onde.children[1]);
+onde.parentElement.removeChild(onde.parentElement.children[1]);
+onde.parentElement.removeChild(onde.parentElement.children[1]);
+onde.parentElement.removeChild(onde.parentElement.children[1]);
+// ultimas 3 linhas podem ser uma função percorrendo com o for;

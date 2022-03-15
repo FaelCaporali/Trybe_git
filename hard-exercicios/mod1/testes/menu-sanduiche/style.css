@@ -8,9 +8,12 @@ img {
 main {
     height: 200vh;;
 }
-ul {
+div {
+    visibility: hidden;
     top: 2vh;
     right: 2vh;
     position: fixed;
-    visibility: hidden;
+    width: 20vw;
+    height: 20vh;
+    border: solid black 2px;
 }
