@@ -15,7 +15,7 @@ function tagMain() {
 document.querySelector('body').appendChild(tagMain());
 //3 Adicione a tag section com a classe center-content como filho da tag main 
 //criada no passo 2;
-let sect = document.createElement('section');
+const sect = document.createElement('section');
 function sectionTag () {
     sect.classList = 'center-content';
     return sect;
@@ -59,7 +59,7 @@ sectionleft.appendChild(imagem());
 //Essa lista deve ser filha do section criado no passo 6;
 const listaCompleta = document.createElement('ul');
 function elementosLista () {    
-    let quantidade = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+    const quantidade = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
     for (let i in quantidade) {
         let item = document.createElement('li');
         item.innerText = quantidade[i];
@@ -70,7 +70,31 @@ sectionRight.appendChild(listaCompleta);
 elementosLista();
 //9 Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
 for (let i = 0; i<3;i+=1) {
-    let hagaTres = document.createElement('h3');
+    const hagaTres = document.createElement('h3');
     hagaTres.innerText = 'corta a trança Padawan, agora é a guerra dos clones';
     tag.appendChild(hagaTres);
 }
+//10Adicione a classe title na tag h1 criada;
+titulo.classList = 'title';
+//11 Adicione a classe description nas 3 tags h3 criadas;
+const listaH3 = document.querySelectorAll('h3');
+function addClassH3 () {
+    for (i in listaH3) {
+        listaH3[i].className = 'description';
+    }
+}
+addClassH3();
+//12 Remova a section criado no passo 5 (aquele que possui a classe left-content ). 
+//Utilize a função .removeChild() ;
+document.querySelector('main').removeChild(sectionleft);
+//13 Centralize a section criado no passo 6 (aquele que possui a classe right-content ). 
+//Dica: para centralizar, basta configurar o margin-right: auto da section ;
+sectionRight.style.marginRight = 'auto';
+//14 Troque a cor de fundo do elemento pai da section
+//criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+sect.parentElement.style.backgroundColor = 'green';
+//15 Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+for (let i=9; i > 7; i-=1) {
+    document.querySelector('ul').children[i].remove();
+}
+//fim
