@@ -1,0 +1,12 @@
+body {
+    padding: 0;
+}
+
+.login {
+    display: block;
+}
+
+#login-area {
+    display: inline-block;
+    width: auto;
+}
